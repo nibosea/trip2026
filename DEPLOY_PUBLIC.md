@@ -5,7 +5,7 @@
 
 ## 🔐 合言葉
 
-**`Zoro-Eve-2026!`**（14文字・記号入り・PBKDF2 60万回導出）
+**`Eve-Zoro-2026!`**（14文字・記号入り・PBKDF2 60万回導出）
 
 - 家族（弥令さん・お姉さん）には **URL + この合言葉** だけ伝えれば OK
 - 変えたくなったら `npx staticrypt source.html -p '新しいパスワード'` で再生成
@@ -74,7 +74,7 @@ cd ~/claude
 cd /tmp
 npx staticrypt ~/claude/trips/2026-usa/travel-site.html \
   --short \
-  --password 'Zoro-Eve-2026!' \
+  --password 'Eve-Zoro-2026!' \
   --output /tmp/rebuild \
   --template-title "2026 USA & Canada Trip" \
   --template-instructions "合言葉を入力してください" \
@@ -100,7 +100,7 @@ git push
 - **ソース保護**: `view-source:` で見ても暗号文のみ。平文情報は1バイトも含まれない
 - **検証済み**: PNR、予約番号、電話番号、パスワード、氏名いずれも平文漏洩なし
 - **攻撃耐性**:
-  - 辞書攻撃: `Zoro-Eve-2026!` は14文字+記号で辞書未収録。実質不可
+  - 辞書攻撃: `Eve-Zoro-2026!` は14文字+記号で辞書未収録。実質不可
   - ブルートフォース: PBKDF2 60万回で1試行あたり数百ms。14文字英数記号空間は天文学的
 - **リスク**:
   - 合言葉が流出したら終わり → 家族以外には教えない
