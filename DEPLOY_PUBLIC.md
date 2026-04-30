@@ -74,7 +74,7 @@ cd ~/claude
 cd /tmp
 npx staticrypt ~/claude/trips/2026-usa/travel-site.html \
   --short \
-  --password 'Eve-Zoro-2026!' \
+  --password '新しい合言葉' \
   --output /tmp/rebuild \
   --template-title "2026 USA & Canada Trip" \
   --template-instructions "合言葉を入力してください" \
@@ -100,8 +100,8 @@ git push
 - **ソース保護**: `view-source:` で見ても暗号文のみ。平文情報は1バイトも含まれない
 - **検証済み**: PNR、予約番号、電話番号、パスワード、氏名いずれも平文漏洩なし
 - **攻撃耐性**:
-  - 辞書攻撃: `Eve-Zoro-2026!` は14文字+記号で辞書未収録。実質不可
-  - ブルートフォース: PBKDF2 60万回で1試行あたり数百ms。14文字英数記号空間は天文学的
+  - 辞書攻撃: 11文字英数で辞書未収録。実質不可
+  - ブルートフォース: PBKDF2 60万回で1試行あたり数百ms。11文字英数空間は天文学的
 - **リスク**:
   - 合言葉が流出したら終わり → 家族以外には教えない
   - 暗号化済HTMLそのもの（`docs/travel-site.html`）は公開されるが中身は読めない
